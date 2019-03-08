@@ -11,7 +11,7 @@
                     class="basic"><?php echo anchor("user-types/add-user-type/", "add user type", array('style' => "font-color:black;")); ?></button>
             </div>
         </div>
-        <table class="table table-sm table-bordered">
+        <table id="user-types-table" class="table table-sm table-bordered">
             <tr>
                 <th>Count
                 </th>
@@ -93,3 +93,15 @@ if ($check == 0) {
         </table>
         <?php echo $links; ?>
     </div>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('#user-types-table').DataTable(
+        {
+        "ajax": {
+            url : "<?php echo site_url("user-types/all-user-types") ?>",
+            type : 'GET'
+        },
+    }
+    );
+});
+</script>

@@ -43,5 +43,8 @@
 <script src="<?php echo base_url();?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
 <script src="<?php echo base_url();?>assets/themes/custom/script.js" ></script>
-       
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script> 
+
+</body>  
 </html>

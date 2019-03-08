@@ -43,13 +43,13 @@ class Categories_model extends CI_Model
         $result= $this->db->get();
         return $result;
     }
+
     public function get_results()
     {
-       
         $this->db->where("category.deleted=0");
-// Execute the query.
+        // Execute the query.
         $query = $this->db->get("category");
-// Return the results.
+        // Return the results.
         return $query;
         
     }

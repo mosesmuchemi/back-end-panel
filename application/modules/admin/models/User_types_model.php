@@ -21,6 +21,7 @@ class User_types_model extends CI_Model
            return false;
         }
     }
+
     public function get_user_type($table, $where,$limit,$page,  $order, $order_method)
     {
         $where="deleted=0";
@@ -32,6 +33,7 @@ class User_types_model extends CI_Model
         $result= $this->db->get();
         return $result;
     }
+    
     public function get_single($user_type_id)
     {
         $this->db->where("user_type_id", $user_type_id);

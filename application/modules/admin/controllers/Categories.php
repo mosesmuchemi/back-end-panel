@@ -130,9 +130,11 @@ class Categories extends admin
             }
         }
 
-        $v_data = array("validation_errors" => validation_errors(),
+        $v_data = array(
+            "validation_errors" => validation_errors(),
             "category" => $this->Categories_model->get_results()
         );
+
         // var_dump($v_data);die();
         $data = array(
             "title" => $this->site_model->display_page_title(),

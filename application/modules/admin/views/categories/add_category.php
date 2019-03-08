@@ -1,6 +1,7 @@
 <?php if (!defined('BASEPATH')) {
     exit('No direct script access allowed');
 }
+// var_dump($this->uri->uri_string());die();
     if (!empty($validation_errors)) 
     {
         echo $validation_errors;
